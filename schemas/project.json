@@ -14,7 +14,10 @@
 		},
 		"structures": {
 			"description": "A list of structures to be able to generate",
-			"type": "array"
+			"type": "array",
+			"items": {
+				"$ref": "/structure.json"
+			}
 		}
 	},
 	"required": ["namespace", "author", "structures"]
