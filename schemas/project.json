@@ -1,5 +1,5 @@
 {
-	"$schema": "http://json-schema.org/draft-06/schema#",
+	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Project",
 	"description": "A StructureCraft project",
 	"type": "object",
@@ -14,10 +14,7 @@
 		},
 		"structures": {
 			"description": "A list of structures to be able to generate",
-			"type": "array",
-			"items": {
-				"$ref": "structure"
-			}
+			"type": "array"
 		}
 	},
 	"required": ["namespace", "author", "structures"]
