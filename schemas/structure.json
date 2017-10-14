@@ -10,10 +10,7 @@
 		},
 		"exit sections": {
 			"type": "array",
-			"description": "A list of exit sections that will be the root of the structure",
-			"items": {
-				"$ref": "exitsection"
-			}
+			"description": "A list of exit sections that will be the root of the structure"
 		}
 	}
 }
