@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <link rel="stylesheet" href="main.css">
+	  <meta charset="UTF-8">
+	  <title>StructureCraft JSON Structure Documentation</title>
+   </head>
+   <body>
+	  <div class="container">
+		 <div id="definition-project" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title">project</h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-description">
+				  <p>A StructureCraft project</p>
+			   </section>
+			   <section class="json-schema-properties">
+				  <dl>
+					 <dt data-property-name="namespace">
+						<span class="json-property-name">namespace:</span>
+						<span class="json-property-type">string</span>
+						<span class="json-property-range" title="Value limits"></span>
+						<span class="json-property-required"></span>
+					 </dt>
+					 <dd>
+						<p>Namespace for the project</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="author">
+						<span class="json-property-name">author:</span>
+						<span class="json-property-type">string</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The author of the project</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="structures">
+						<span class="json-property-name">structures:</span>
+						<span class="json-property-type">object[]</span>
+						<span class="json-property-range" title="Value limits"></span>
+						<span class="json-property-required"></span>
+					 </dt>
+					 <dd>
+						<p>A list of structures to be able to generate</p>
+						<div class="json-inner-schema">
+						   <section class="json-schema-array-items">
+							  <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/structure">structure</a>
+							  </span> <span class="json-property-range" title="Value limits"></span>
+							  <div class="json-inner-schema"> </div>
+						   </section>
+						</div>
+					 </dd>
+					 <dt data-property-name="ref">
+						<span class="json-property-name">ref:</span>
+						<span class="json-property-type">object</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>An object containing refernece for sections</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+				  </dl>
+			   </section>
+			</div>
+		 </div>
+		 <h2>Definitions</h2>
+		 <div id="definition-exit-section" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title"><a name="/definitions/exit section"></a>exit section:
+				  <span class="json-property-type">
+				  <span class="json-property-type"></span>
+				  <span class="json-property-range" title="Value limits"></span>
+				  </span>
+			   </h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-description">
+				  <p>A section specific to an exit.</p>
+			   </section>
+			   <section class="json-schema-properties">
+				  <dl>
+					 <dt data-property-name="transform">
+						<span class="json-property-name">transform:</span>
+						<span class="json-property-type">object[]</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>A list of possible ways to rotate &amp; mirror the structure</p>
+						<div class="json-inner-schema">
+						   <section class="json-schema-array-items">
+							  <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/rotmir">rotmir</a>
+							  </span> <span class="json-property-range" title="Value limits"></span>
+							  <div class="json-inner-schema"> </div>
+						   </section>
+						</div>
+					 </dd>
+					 <dt data-property-name="section">
+						<span class="json-property-name">section:</span>
+						<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/section">section</a>
+						</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="ref">
+						<span class="json-property-name">ref:</span>
+						<span class="json-property-type">string</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The id of a section of the ref object.</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="weight">
+						<span class="json-property-name">weight:</span>
+						<span class="json-property-type">number</span>
+						<span class="json-property-range" title="Value limits"></span>
+						<span class="json-property-required"></span>
+					 </dt>
+					 <dd>
+						<p>The weight of this structure for it to be chosen. The chance it will be chosen is the weight divided by the sums of the weights for all of the exits exitsections</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+				  </dl>
+			   </section>
+			</div>
+		 </div>
+		 <div id="definition-position" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title"><a name="/definitions/position"></a>position:
+				  <span class="json-property-type">
+				  <span class="json-property-type">number[]</span>
+				  <span class="json-property-range" title="Value limits"></span>
+				  </span>
+			   </h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-array-items">
+				  <span class="json-property-type">number</span> <span class="json-property-range" title="Value limits"></span>
+				  <div class="json-inner-schema">
+					 <section class="json-schema-description">
+						<p>A number that represents a part of the coordinate.</p>
+					 </section>
+				  </div>
+			   </section>
+			</div>
+		 </div>
+		 <div id="definition-rotmir" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title"><a name="/definitions/rotmir"></a>rotmir:
+				  <span class="json-property-type">
+				  <span class="json-property-type">string</span>
+				  <span class="json-property-range" title="Value limits"></span>
+				  <span class="json-property-pattern" title="String pattern">, must match <span class="json-schema--regex">^(0|90|180|270)?(N|Z|X)?$</span>
+				  </span>
+			   </h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-description">
+				  <p>A set of a rotation and a mirror in the form of (0|90|180|270)?(N|Z|X)? (ex: &quot;0N&quot;, &quot;180X&quot;, &quot;270Z&quot;) remove part of the statement for any mirror/rotation (ex. &quot;0&quot;, &quot;N&quot;, &quot;&quot;)</p>
+			   </section>
+			</div>
+		 </div>
+		 <div id="definition-section" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title"><a name="/definitions/section"></a>section:
+				  <span class="json-property-type">
+				  <span class="json-property-type">object</span>
+				  <span class="json-property-range" title="Value limits"></span>
+				  </span>
+			   </h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-properties">
+				  <dl>
+					 <dt data-property-name="entrance">
+						<span class="json-property-name">entrance:</span>
+						<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/position">position</a>
+						</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The position of the entrance inside the structure file. The entrance will overlap the exit that it stems from</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="structure">
+						<span class="json-property-name">structure:</span>
+						<span class="json-property-type">string</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The relative location of the structure file this object represents</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="exits">
+						<span class="json-property-name">exits:</span>
+						<span class="json-property-type">object[]</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>A list of exits on the structure. The entrance of the next structure and this exit will overlap.</p>
+						<div class="json-inner-schema">
+						   <section class="json-schema-array-items">
+							  <span class="json-property-type">object</span> <span class="json-property-range" title="Value limits"></span>
+							  <div class="json-inner-schema">
+								 <section class="json-schema-description">
+									<p>An individual exit that more sections will stem from</p>
+								 </section>
+								 <section class="json-schema-properties">
+									<dl>
+									   <dt data-property-name="position">
+										  <span class="json-property-name">position:</span>
+										  <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/position">position</a>
+										  </span>
+										  <span class="json-property-range" title="Value limits"></span>
+									   </dt>
+									   <dd>
+										  <p>the position of the exit (from the bottom south west)</p>
+										  <div class="json-inner-schema"> </div>
+									   </dd>
+									   <dt data-property-name="exit-sections">
+										  <span class="json-property-name">exit sections:</span>
+										  <span class="json-property-type">object[]</span>
+										  <span class="json-property-range" title="Value limits"></span>
+									   </dt>
+									   <dd>
+										  <p>A list of exit sections to choose from</p>
+										  <div class="json-inner-schema">
+											 <section class="json-schema-array-items">
+												<span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/exitsection">exitsection</a>
+												</span> <span class="json-property-range" title="Value limits"></span>
+												<div class="json-inner-schema"> </div>
+											 </section>
+										  </div>
+									   </dd>
+									</dl>
+								 </section>
+							  </div>
+						   </section>
+						</div>
+					 </dd>
+					 <dt data-property-name="offsets">
+						<span class="json-property-name">offsets:</span>
+						<span class="json-property-type">object</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+				  </dl>
+			   </section>
+			</div>
+		 </div>
+		 <div id="definition-structure" class="panel panel-definition">
+			<div class="panel-heading">
+			   <h3 class="panel-title"><a name="/definitions/structure"></a>structure:
+				  <span class="json-property-type">
+				  <span class="json-property-type">object</span>
+				  <span class="json-property-range" title="Value limits"></span>
+				  </span>
+			   </h3>
+			</div>
+			<div class="panel-body">
+			   <section class="json-schema-description">
+				  <p>A structure that can be generated</p>
+			   </section>
+			   <section class="json-schema-properties">
+				  <dl>
+					 <dt data-property-name="name">
+						<span class="json-property-name">name:</span>
+						<span class="json-property-type">string</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The name of the structure (used for filesystem orginization)</p>
+						<div class="json-inner-schema"> </div>
+					 </dd>
+					 <dt data-property-name="exit-sections">
+						<span class="json-property-name">exit sections:</span>
+						<span class="json-property-type">object[]</span>
+						<span class="json-property-range" title="Value limits"></span>
+					 </dt>
+					 <dd>
+						<p>The exit sections to choose from when generating the structure</p>
+						<div class="json-inner-schema">
+						   <section class="json-schema-array-items">
+							  <span class="json-property-type">    <a class="json-schema-ref" href="#/definitions/exit section">exit section</a>
+							  </span> <span class="json-property-range" title="Value limits"></span>
+							  <div class="json-inner-schema"> </div>
+						   </section>
+						</div>
+					 </dd>
+				  </dl>
+			   </section>
+			</div>
+		 </div>
+	  </div>
+   </body>
+</html>

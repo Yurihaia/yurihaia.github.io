@@ -1,0 +1,364 @@
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+main,section {
+	display: block;
+}
+
+[hidden] {
+	display: none;
+}
+
+a {
+	background-color: transparent;
+}
+
+a:active,a:hover {
+	outline: 0;
+}
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+@media print {
+	*, *:before, *:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a, a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	a[href^="#"]:after,	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	p,	h2,	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,	h3 {
+		page-break-after: avoid;
+	}
+}
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+	src: url('../fonts/glyphicons-halflings-regular.eot');
+	src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+a:hover,a:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+
+[role="button"] {
+	cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+
+h1,.h1,h2,.h2,h3,.h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h4,.h4,h5,.h5,h6,.h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h1,.h1 {
+	font-size: 36px;
+}
+
+h2,.h2 {
+	font-size: 30px;
+}
+
+h3,.h3 {
+	font-size: 24px;
+}
+
+h4,.h4 {
+	font-size: 18px;
+}
+
+h5,.h5 {
+	font-size: 14px;
+}
+
+h6,.h6 {
+	font-size: 12px;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+dl {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+dt,dd {
+	line-height: 1.42857143;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+@-webkit-keyframes progress-bar-stripes {
+	from {
+		background-position: 40px 0;
+	}
+
+	to {
+		background-position: 0 0;
+	}
+}
+
+@keyframes progress-bar-stripes {
+	from {
+		background-position: 40px 0;
+	}
+
+	to {
+		background-position: 0 0;
+	}
+}
+
+.panel {
+	margin: 20px 0;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-body {
+	padding: 15px;
+}
+
+.panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.panel-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	color: inherit;
+}
+
+.panel-title>a {
+	color: inherit;
+}
+
+.container:before,.container:after,.panel-body:before,.panel-body:after {
+	content: " ";
+	display: table;
+}
+
+.container:after,.panel-body:after {
+	clear: both;
+}
+
+/*
+/*
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+.panel-definition {
+	border-color: #a2a2a2;
+}
+
+.panel-definition>.panel-heading {
+	color: #000;
+	background-color: #eee;
+	border-color: #a2a2a2;
+}
+
+.json-schema-description:before {
+	font-weight: bold;
+	color: #555;
+	text-transform: uppercase;
+	content: "Description";
+	padding-bottom: .5em;
+	display: block;
+}
+
+.json-schema-description:not(:last-child) {
+	padding-bottom: 1.5em;
+}
+
+.json-schema-properties:before {
+	font-weight: bold;
+	color: #555;
+	text-transform: uppercase;
+	content: "Properties";
+	padding-bottom: .5em;
+	display: block;
+}
+
+.json-schema-properties:not(:last-child) {
+	padding-bottom: 1.5em;
+}
+
+.json-schema-properties dd:not(:last-child) {
+	padding-bottom: 1em;
+}
+
+.json-schema-properties dl {
+	margin: 0;
+}
+
+.json-schema-array-items:before {
+	font-weight: bold;
+	color: #555;
+	text-transform: uppercase;
+	content: "Items";
+	padding-bottom: .5em;
+	display: block;
+}
+
+.json-schema-array-items:not(:last-child) {
+	padding-bottom: 1.5em;
+}
+
+.json-inner-schema .json-schema-properties,.json-inner-schema .json-schema-array-items,.json-inner-schema .json-schema-description {
+	padding-left: 1em;
+	padding-bottom: .5em;
+	border-left: 2px solid #a2a2a2;
+}
+
+.json-property-required:before {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	background-color: #448bc8;
+	content: "required";
+}
+
+a.json-property-required:before:hover,a.json-property-required:before:focus {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.json-property-required:before:empty {
+	display: none;
+}
+
+.json-property-required:before[href]:hover,.json-property-required:before[href]:focus {
+	background-color: #5e5e5e;
+}
+
+.json-property-type {
+	font-style: italic;
+	font-weight: 100;
+}
+
+/*# sourceMappingURL=main.css.map */
