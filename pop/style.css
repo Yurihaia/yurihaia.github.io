@@ -1,0 +1,10 @@
+body {
+    background-color: #4e64df;
+    position: relative;
+}
+
+.fish {
+    position: absolute;
+    top: calc(50vh - 128px);
+    left: calc(50vw - 128px);
+}
