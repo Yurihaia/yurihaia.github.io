@@ -1,7 +1,8 @@
 const replace = {
 	".": ":black_circle:",
 	"?": ":question:",
-	"!": ":exclamation:"
+	"!": ":exclamation:",
+	"#": ":hash:"
 }
 
 function update() {
