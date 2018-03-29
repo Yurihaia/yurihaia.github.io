@@ -2,20 +2,16 @@
 	<head>
 		<script src="index.js"></script>
 		<style>
-			pre {
-				white-space: pre-wrap;
-			}
 			.oh {
-				border: 0.1em solid black;
-				width: 50%;
-				min-height: 1em;
-				padding: 0.3em;
-				margin: 1em auto;
+				width: 75%;
+				margin: 0 auto;
+				display: block;
 			}
 			.in {
 				width: 75%;
 				margin: 0 auto;
 				display: block;
+				min-height: 1em;
 			}
 		</style>
 	</head>
@@ -27,7 +23,13 @@
 			oninput="update();"
 			rows="7"
 			id="in"
-			></textarea>
-		<pre class="oh" id="out" contenteditable="true"></pre>
+		></textarea>
+		<div style="margin: auto; width: 50%">Zero width space?<input type="checkbox" id="zws" onchange="update();"/></div>
+		<textarea class="oh" 
+			id="out"
+			readonly
+			wrap="soft"
+			rows="15"
+		></textarea>
 	</body>
 </html>
