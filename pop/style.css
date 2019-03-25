@@ -15,3 +15,7 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
+.tonguefish {
+    top: calc(50vh - 256px);
+}
