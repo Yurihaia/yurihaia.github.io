@@ -1,0 +1,21 @@
+body {
+    background-color: #4e64df;
+    position: absolute;
+    margin: 0;
+}
+
+.fish {
+    position: absolute;
+    top: calc(50vh - 128px);
+    left: calc(50vw - 128px);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tonguefish {
+    top: calc(50vh - 256px);
+}
